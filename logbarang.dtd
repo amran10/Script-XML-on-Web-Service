@@ -1,0 +1,37 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT logbarang (barang)+>
+<!ATTLIST logbarang
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT barang (kode,satuan,harga?,asal,tujuan)>
+<!ATTLIST barang
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT kode (#PCDATA)>
+<!ATTLIST kode
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT satuan (#PCDATA)>
+<!ATTLIST satuan
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT harga (#PCDATA)>
+<!ATTLIST harga
+    cur CDATA #IMPLIED ''>
+
+<!ELEMENT asal (pt,kodewil)>
+<!ATTLIST asal
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT tujuan (pt,kodewil)>
+<!ATTLIST tujuan
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT pt (#PCDATA)>
+<!ATTLIST pt
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT kodewil (#PCDATA)>
+<!ATTLIST kodewil
+    xmlns CDATA #FIXED ''>
